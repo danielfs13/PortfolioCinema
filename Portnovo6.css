@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: block;
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  header .HeaderBottom {
+    display: inline;
+    float: right;
+    position: fixed;
+  }
+  
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    min-height: 300px;
+    font-size: 12px;
+  }
+  
+  .column img {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 235px;
+    position: relative;
+    right: 50px;
+    overflow: hidden;
+    bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .column span {
+    position: relative;
+    bottom: 215px;
+    left: 35px;
+    opacity: 0;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+  
+  #Principal span {
+    position: relative;
+    bottom: 350px;
+    left: 400px;
+    opacity: 0;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+  
+  .content:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .content:hover span {
+    opacity: 1;
+  }
+  
+  #Principal:hover span {
+    opacity: 1;
+  }
+  
+  .column h3 {
+    position: relative;
+    bottom: 30px;
+  }
+  
+  .column p {
+    position: relative;
+    bottom: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row .content {
+    min-height: 300px;
+    max-height: 300px;
+  }
+  
+  .content {
+    background-color: black;
+    padding: 10px;
+    margin: auto;
+    border-radius: 4px 20px 20px 0px;
+    text-align: justify;
+    letter-spacing: 2px;
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+  }
+  
+  #Destaque {
+    position: relative;
+    display: inline;
+    background: red;
+    padding: 5px;
+    max-width: 140px;
+    text-align: center;
+    left: 420px;
+    bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .column {
+      width: 100%;
+    }
+    .column .img {
+      position: relative;
+      right: 100px;
+      width: 50%;
+    }
+  
+    @media screen and (max-width: 200px) {
+      .column {
+        width: 100%;
+      }
+      .column .img {
+        position: relative;
+        right: 100px;
+      }
+    }
+  }
